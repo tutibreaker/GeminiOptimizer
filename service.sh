@@ -18,7 +18,7 @@ echo "$(date): Iniciando Optimizador A24 (KernelSU)"
 
 # 1. Ajustes de Gestión de Memoria
 echo "Aplicando ajustes de memoria..."
-sysctl -w vm.swappiness=80 # Prioriza mantener apps en RAM física. Ajusta entre 10-100.
+sysctl -w vm.swappiness=60 # Prioriza mantener apps en RAM física. Ajusta entre 10-100.
 sysctl -w vm.vfs_cache_pressure=50 # Reduce presión en caché VFS. Ajusta entre 10-200.
 
 # 2. Configuración de ZRAM
